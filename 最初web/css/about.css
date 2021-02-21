@@ -1,0 +1,22 @@
+body {background: #E7F8FF;}
+.container {background: white;}
+.line {width: 100%; height: 10px;background: #E7F8FF;}
+.izhiyuan img {width: 30%;max-width: 100%;margin-left: 35%;padding: 0px;}
+section img{width: 60%;margin: 0px auto;display: none;padding-bottom:50px;}
+#menu {top:90%}
+ol {text-align: center;margin-bottom: 10px;}
+ol li{display: inline-block;padding:0.5% 1%;}
+ol li:hover,ol li:visited{background: #EEEEEE}
+.col1{background:#BB4859;color:#fff;}
+.col2{background:#000;color:#fff;}
+@media only screen and (max-width: 599px) {
+section img{width: 80%;}
+	}
+
+    .i-img h1{margin-bottom: 20px;}
+    .i-img h4 {padding: 12px 0px;margin-bottom: 10px;}
+    .i-img h4 a{padding: 6px 10px;background: #BB4859; color: white;margin-right: 10px;}
+
+	.i-img{position:relative;min-height:1px;padding-right:15px;padding-left:15px;margin-top: 8%;text-align: center;}
+	.i-img img{width: 50%;height:50%;margin-left: 25%;}
+

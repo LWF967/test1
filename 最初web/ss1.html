@@ -1,0 +1,418 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>社团特色</title>
+<meta name="viewport" content="user-scalable=yes, width=device-width,iniial-scale=1.0,maximum-scale=1.0" />
+ <link rel="stylesheet" href="css/ss1.css" />
+ <link rel="stylesheet" type="text/css" href="css/main.css"/>
+ <link rel="stylesheet" type="text/css" href="css/media.css"/>
+
+ <script type="text/javascript"> </script>
+<script>
+QuickMenu = function(element, startPoint, endPoint) {
+	var STATICMENU = element;
+	var stmnScrollSpeed = 1;
+	var stmnTimer;
+	
+	RefreshStaticMenu = function ()
+	{
+		var stmnStartPoint = parseInt(STATICMENU.style.top, 10);
+		var stmnEndPoint = parseInt(document.documentElement.scrollTop, 10)+endPoint;
+		var stmnRefreshTimer = 1;
+		
+		if ( stmnStartPoint != stmnEndPoint ) {
+				stmnScrollAmount = Math.ceil( Math.abs( stmnEndPoint - stmnStartPoint ) / 17 );
+				STATICMENU.style.top = parseInt(STATICMENU.style.top, 10) + ( ( stmnEndPoint<stmnStartPoint ) ? -stmnScrollAmount : stmnScrollAmount ) + "px";
+				stmnRefreshTimer = stmnScrollSpeed;
+		}
+		stmnTimer = setTimeout ("RefreshStaticMenu();", stmnRefreshTimer);
+	}
+	this.InitializeStaticMenu = function ()
+	{
+			STATICMENU.style.top = startPoint + "px";
+			RefreshStaticMenu();
+	}
+
+}
+</script>
+ <style>
+body{ font-size:14px; color:#333333; margin:0px; padding:0px;max-width: 980px;margin-left: 300px;margin:0 auto;}
+.float-title{  position:relative; height:auto; background-color:#F0F0F0;width: auto;}
+#quick{ width:85px; position: absolute; right:10px; padding:10px; border:#CCCCCC solid 1px;background-color:rgba(125,125,125,0.2);}
+#quick p{text-align: center;}
+#quick a:hover{color: #1FCDFF;
+background:rgba(12,125,112,0.7) ;
+        padding: 10px 10px;
+        }
+#affiche{background-size: cover;}
+.nav .c1:hover{color: white;background: #ff5555;}
+.nav .c2:hover{background:#0000FF;}
+.nav .c22{display:none;position: absolute; background: rgba(76,76,76,0.2);padding: 15px;line-height: 2.2;}
+.c2-1:hover{;background: #00008B;}
+.c2-2:hover{ background: #0088FF;}
+.nav .c3:hover{background: #40abdb;}
+.nav .c4:hover{color: white; background: #ffd36f;}
+.nav .c5:hover{color: white;background: #eb30b7;}
+.nav .c6:hover{color: white;background: #d4b0ff;}
+.nav .c1.active{color: white;background: #ff5555;}
+.nav .c2.active{color: white;background: #83cb65;}
+.nav .c3.active{color: white;background: #40abdb;}
+.nav .c4.active{color: white;background: #ffd36f;}
+.nav .c5.active{color: white;background: #eb30b7;}
+.nav .c6.active{color: white;background: #d4b0ff;}
+
+    .navbar div a
+    {   position: relative;
+        display: block;
+        margin: 0;
+        padding: 5px 10px;
+        width: auto;
+        white-space: nowrap;
+        text-align: left;
+        text-decoration: none;
+        background-color: rgba(255,255,255,0.1);
+        color: #2875DE;
+        font: 18px "微软雅黑"}
+    .navbar div a:hover
+    {   color: #FFF}
+        .navbar-brand{width:auto;height: auto;}
+        .container{
+        	width: 100%;margin: 0 auto;
+        	height:auto;
+        }
+        .navbar-brand{float: left;}
+      .navbar-collapse{float: right;margin: 0px;padding-left:180px;padding-top: 40px;}
+      .title h3{text-align: center;margin-top:50px;}
+      .fr{float: right;}
+
+
+
+
+.nav .color1:hover{color: white background: #ff5555;}
+.nav .color2:hover{color: white; background: #83cb65;}
+.nav .color3:hover{color: white; background: #40abdb;}
+.nav .color4:hover{color: white; background: #ffd36f;}
+.nav .color5:hover{color: white;background: #eb30b7;}
+.nav .color6:hover{color: white;background: #d4b0ff;}
+.nav .color1.active{color: white;background: #ff5555;}
+.nav .color2.active{color: white;background: #83cb65;}
+.nav .color3.active{color: white;background: #40abdb;}
+.nav .color4.active{color: white;background: #ffd36f;}
+.nav .color5.active{color: white;background: #eb30b7;}
+.nav .color6.active{color: white;background: #d4b0ff;}
+.nav-hide .color1:hover{color: white background: #ff5555;}
+.nav-hide .color2:hover{color: white; background: #83cb65;}
+.nav-hide .color3:hover{color: white; background: #40abdb;}
+.nav-hide .color4:hover{color: white; background: #ffd36f;}
+.nav-hide .color5:hover{color: white;background: #eb30b7;}
+.nav-hide .color6:hover{color: white;background: #d4b0ff;}
+.nav-hide .color1.active{color: white;background: #ff5555;}
+.nav-hide .color2.active{color: white;background: #83cb65;}
+.nav-hide .color3.active{color: white;background: #40abdb;}
+.nav-hide .color4.active{color: white;background: #ffd36f;}
+.nav-hide .color5.active{color: white;background: #eb30b7;}
+.nav-hide .color6.active{color: white;background: #d4b0ff;}
+.nav .color7:hover{color: white;background: #ED47C5;}
+.nav-hide .color7:hover{color: white;background: #ED47C5;}
+
+/*下拉导航*/
+.nav ul li ul{margin-top: 0px;} 
+#menu-toggle,#menu-checkbox ,.nav-hide{display: none;}
+#menu-toggle img{width: 100%;height: 100%;}
+.nav-hide {width: 100%;position: relative;height: 300px;}
+.nav-hide ul li {display:block;padding: 10px;} 
+.nav-hide ul li a {padding: 1% 5% 1% 68%;margin-left: 5%;font-weight: 500;}
+.nav-hide ul li ul{display: none;}
+.nav-hide ul li:hover ul{display:block;}
+.nav-hide ul li:hover ul li a {background: rgba(76,76,76,.1);}
+@media only screen and (min-width: 835px) and (max-width: 1024px) {
+.nav {display: block;}
+.nav ul li a{padding: 5px;}
+.nav ul li ul{margin-top:0px}
+#menu ul li a {background-color:rgba(255,255,255,.1);}
+#menu ul li a:hover,#menu ul li a.cur { background-color: rgba(50,201,42,.5)}
+.fdepartment ul{padding: 20px 40px;}
+.fdepartment .fd-backgroud1{width:24%;height: 310px;margin-right: 10px;}
+.fdepartment .fd-backgroud2{width:24%;height: 310px;margin-right: 10px;}
+.fdepartment .fd-backgroud3{width:24%;height: 310px;margin-right: 10px;}
+.fdepartment .fd-backgroud4{width:24%;height: 310px}
+
+}
+@media only screen and (max-width:1024px ) {
+body {margin-left: 4%;margin-right: 4%;}
+}
+@media only screen and (min-width: 700px) and (max-width: 834px) {
+.intro-act-con .item-left, .intro-act-con .item-right{height: 250px;}
+	} 
+@media only screen and (min-width: 600px) and (max-width: 699px) {
+.intro-act-con .item-left, .intro-act-con .item-right{height: 280px;}
+	}
+@media only screen and (min-width: 600px) and (max-width: 834px) {
+.header img{padding: 10% 0% 0% 10%;}
+.logo {clear:both;position: relative;}
+.nav {display: none;}
+#menu-toggle  {display: block;position:absolute;right: 6%;top:8%;}
+#menu-checkbox:checked ~ .nav-hide{display: inline-block;}
+#menu ul li a {background-color:rgba(255,255,255,.1);}
+#menu ul li a:hover,#menu ul li a.cur { background-color: rgba(50,201,42,.5)}
+.fdepartment ul{padding: 20px 40px;}
+.fdepartment .fd-backgroud1{width:48%;height: 214px;margin-right: 20px;margin-bottom: 20px;}
+.fdepartment .fd-backgroud2{width:48%;float:right;height: 214px;margin-right: 0px;margin-bottom: 20px;}
+.fdepartment .fd-backgroud3{width:48%;height: 214px;margin-right: 20px;}
+.fdepartment .fd-backgroud4{width:48%;height: 214px;float:right;}
+
+}
+@media only screen and (max-width: 599px) {
+.header img{padding: 10% 0% 0% 10%;}
+.logo {clear:both;position: relative;}
+.nav {display: none;}
+#menu-toggle  {display: block;position:absolute;right: 6%;top: 8%;}
+#menu-checkbox:checked ~ .nav-hide{display: inline-block;}
+#menu{width: 55px;top: 60%;}
+#menu ul li a{width: 55px; height: 40px; line-height: 40px; font-size: 10px;}
+#menu ul li a {background-color:rgba(255,255,255,.1);}
+#menu ul li a:hover,#menu ul li a.cur { background-color: rgba(50,201,42,.5)}
+.box {height: 25px;width: 42px;}
+.fdepartment ul{padding: 10px 20px;}
+.fdepartment .fd-backgroud1{width:100%;height: auto;}
+.fdepartment .fd-backgroud2{width:100%;height: auto;}
+.fdepartment .fd-backgroud3{width:100%;height: auto;}
+.fdepartment .fd-backgroud4{width:100%;height: auto;}
+
+}
+
+</style>
+
+</style>
+
+</head>
+<body>
+    <div class="title1">
+    	
+ 
+    <div class="navbar navbar-inverse">
+    	
+        <div class="container">
+           <div class="header">
+			<div class="container clear"  id="header">
+				<div class="logo">
+					<div class="fl">
+						<img src="images/logo.jpg" alt="青志联"/>
+					</div>
+				</div>
+				<!-- 下拉导航 -->
+				<label id="menu-toggle" for="menu-checkbox"><img src="images/下拉菜单按钮.png"/></label>
+                <input id="menu-checkbox" type="checkbox">
+                <div class="nav-hide">
+                	<ul>
+						<li><a href="index.html" class="color1">首页</a></li>
+						<li><a class="color2  active">特色活动</a>
+							<ul>
+								<li><a href="respectold.html" class="color7">敬老活动</a></li>
+								<li><a href="ss1.html" class=R"color7">支教活动</a></li>
+							</ul>
+						</li>	
+						<li><a href="about.html" class="color3">报名流程</a></li>
+						<li><a href="i志愿.html"  class="color4">i志愿使用</a></li>
+						<li><a href="compla.html"  class="color5">沟通平台</a></li>
+						<li><a href="contact us.html"  class="color6">联系我们</a></li>
+					</ul>
+                </div>
+				<div class="nav ">
+					<div class="fr">
+						<ul>
+						<li><a href="index.html" class="color1">首页</a></li>
+						<li><a class="color2 active">特色活动</a>
+							<ul>
+								<li><a href="respectold.html" class="color7">敬老活动</a></li>
+								<li><a href="ss1.html" class=R"color7 7">支教活动</a></li>
+							</ul>
+						</li>	
+						<li><a href="about.html" class="color3" >报名流程</a></li>
+						<li><a href="i志愿.html"  class="color4" >i志愿使用</a></li>
+						<li><a href="compla.html"  class="color5" >沟通平台</a></li>
+						<li><a href="contact us.html"  class="color6" >联系我们</a></li>
+					</ul>
+					</div>
+				</div>
+					
+			</div>
+		</div>
+            </div>
+          
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+    <!-- /.navbar -->
+   </div>
+	
+	<div style="height:100px; background-color:#40ABDB;text-align: center; " class="title">
+
+<h3>    支教活动  </h3>
+<p><a>Support </a>
+	<a>teaching</a>
+	<a>activities</a>
+	
+</p>
+
+</div>
+    <div class="float-title">
+	<div class="text2">
+	<h1>大型活动
+</h1>
+	<p>	<img src="images/respectold-img/微信图片_20180502152335.jpg" width="50%" alt class="img-rounded pull-right"  />
+到达目的地后，志愿者们便开始了场地的布置。一部分志愿者将桌子搬至指定地点，一部分志愿者打气球装饰场地，另外一部分则将游戏规则和项目写在卡纸上。据笔者现场观察，整个室外场地一共设置了五个摊位的游戏点，分别是拼图、跳格子、踢毽子、抛圈圈、跳绳。而室内的四个班级，分别进行你画我猜、手口不一、抢板凳、吹乒乓球等游戏。
+下课铃声响起后，室内室外的游戏便也随之开始。小朋友们带着激动的心情来到操场参加游戏。参与整个游戏中小朋友们都热情高涨，积极参与，每一个游戏点都排起了长长的队伍；在拼图游戏中，小朋友们都高度集中；在跳格子游戏中，小朋友们也都能够准确无误的跳完每一个格子。孩子们热情洋溢、志愿者心感安慰。游戏是儿童的天地，在这个志愿者搭建的小小天地里，小朋友们天真无邪的笑着，玩闹着。
+在活动期间，有些志愿者用气球折成小狗的模样送给小朋友们。有些志愿者在阳光下维持着纪律和颁发奖品，并积极引导小朋友们正确的玩游戏。看到小朋友们绽放出满足的笑容，志愿者们付出的的汗水也是值得的。
+ 在活动的最后，华南小学的校长临时召开会议，并邀请在场的所有志愿者参与。会议中，校长对此次“庆六一”的活动给予了很高的评价。“此次活动举办得非常有意义，孩子们不仅能在活动中快乐成长，而且还能在游戏中获得知识，懂得学会合作与信任。本校的师生们都希望志愿者们往后可以多开展此类活动，让孩子们能够在感受爱的过程中快乐成长，学会感恩。”这是来自华南小学校长在会议中发表的感言。
+   在支教的活动中，你也许会紧张，会担心，会激动，会兴奋，但所有不安的情绪最后都会被小朋友的笑容化解，击中你内心深处的柔软。这种魔力由你，由我，由我们一起实现。我们不仅仅是在收获经验，更是在播种和传递爱心，下一个播种人，你在哪里？我们在这等着你。
+
+</p>
+<style type="text/css">
+	.img-rounded{height:auto;float:right;padding-top: 20px;padding-right: 30px;padding-left: 13px;}
+	.text2 p{color: rgba(20,70,100,0.8);text-indent: 2em;line-height: 30px;}
+	.text2 h1{padding-left: 30px;color: rgba(2,200,120,0.7);}
+.text2{width:100%;float: left;height: 300px;height: auto;}
+</style>
+</div>
+<div class="clear">
+	
+</div>
+    <div class="title-img">
+			<div class="title-img-text">
+				<p>大&nbsp;&nbsp;型</p>
+				<p>活&nbsp;&nbsp;动</p>
+			</div>
+		<style type="text/css">
+	   .title-img{margin-top: 20px;width: auto;min-height:280px;background-image: url(images/4.jpg);background-size:100%;position: relative;}
+      .title-img-text{text-align: center;box-shadow: 1px 1px 1px rgba(1,1,1,1);
+      border-radius:150px;width:150px;
+      height:150px;;background-color:rgba(1,70,155,0.2);margin: auto;position: absolute;top: 0;left: 0;bottom: 0;right: 0;}
+      .title-img-text p{text-align: center;;font-family: "微软雅黑" ;padding-top:15%;font-size: 30px;color:#000000;}
+		</style>
+    </div>
+    <div class="text3-1">
+    	<div class="text3-11">	
+       <a class="T1">成</a><a class="T2">员</a><a class="T3">心</a><a class="T4">得</a>
+	 </div>
+	 <div class="text3-111">
+	 	
+	
+	<p>	<img src="images/3.jpg" width="46%" alt class="img-1 pull-right"  />
+1. 经过大概二十分钟的步行，我们来到了支教地点即湛江市赤岭小学。来到赤岭小学的大门口后，我们排成两列慢慢地走进小学校园内。待下午第一节课的下课铃声响起，我和我的队友们先到三年级（4）班教室和孩子们互动，并做好上课的准备。上课了，我们叫小朋友依次回到座位，随后我们依次进行简单的自我介绍。首先，由我们的主讲进行课堂的讲解，通过展示一张张带有可爱动物的ppt,吸引着小孩子们好奇的目光。小孩子们都听得津津有味，非常踊跃地举手回答问题。在和小孩子们讲解完动物百科后，副讲便开始了我们的游戏环节。我们进行的游戏有口不对心，还有传小球的游戏，逐渐地把上课的气氛拉上了高潮。小孩子们的热情高涨，有些还兴奋得站起来手舞足蹈的，当然这时我们的纪律委员会立马上前去制止这种淘气可爱的举动。下课后，我们先叫孩子们排成两列，并送孩子们出门。在送孩子们出门时，小孩子们都很有礼貌地跟我们告别，让我们的心里充满了喜悦。
+短暂的支教活动就这样过去了，让我再一次体会到小孩子们的单纯善良可爱。我不禁感叹年轻真好，我们都应该保持一颗年轻的心态去面对生活，这样我们的生活将会变得更加美好纯粹。
+</p>
+ </div>
+
+	<div class="text3-2">
+ <p><img src="images/2.jpg" width="46%" alt class="img-2 pull-left"  />	
+2. 主讲的我，负责教学的是画画，教小朋友们画了小猫咪，小熊猫，布朗熊以及小熊猫，由于主讲的魅力所在，小朋友们听得很入迷，纷纷动手跟着“小沛哥哥”学习起来。在主讲的课堂上，印象最深的还是小朋友们都画得很快，所以教学内容也比预想的多，另外个别同学做好之后也是不和其他同学一样举手的，这时候就需要我们负责纪律的几位小姐姐一起提醒他们，鼓励他们，让他们融入班级活动中，以及树立自己能做好的信心。
+画画教学环节结束后是游戏环节，小朋友们都很兴奋，美中不足的就是纪律性比较差点，是游戏不够简化造成的，听不懂游戏规则的小朋友很多，自然也就乱了起来，最后还是临时换了游戏缓和了气氛。
+课堂以及课堂秩序都在几个小伙伴的共同努力下做得挺好，课上有好多小朋友还是比较喜欢我们准备的奖品——小花贴纸以及动漫贴纸。我们时常会通过这些奖品鼓励他们，调动课堂气氛。
+小朋友们很乖很可爱，感谢他们带给我的正能量，也感谢队友的辛勤付出，这是一次很棒的经历。
+</p>  
+	</div>
+  </div>
+<style type="text/css">
+	.img-1{height:auto;float:right;padding-top: 2px;padding-leftt: 20px;margin-left: 13px;}
+	.img-2{height:auto;float:left;padding-top: 2px;padding-right: 20px;}
+	.text3-111{width:100%;float: left;height: 300px;height: auto;}
+	.text3-1 p{float: left;margin-top: 20px;font: "楷体";text-indent: 2em;line-height: 30px;}
+	.text3-2 p{float: left;margin-top: 20px;font: "微软雅黑";text-indent: 2em;line-height: 30px;}
+	.text3-1 .text3-11 a{float: left;width: 8%;font-size: 35px;margin-left: 14%;text-align: center;margin-top: 30px;}
+	.text3-1 .T1{color: white;background: #007F50;}
+	.text3-1 .T2{color: white;background: #EE0C45;}
+	.text3-1 .T3{color: white;background: #00008B;}
+	.text3-1 .T4{color: white;background: #EEA236;}
+.text3-1{width:98%;margin: 0 auto;}
+</style>
+<style type="text/css">
+.text3-2{width:98%;margin: 0 auto;}
+</style>
+ 
+<div class="text1 text(copy)">
+		<div class="tshd">
+			
+		
+	<h1> 支教活动
+</h1>
+	<p>	
+我们在准备支教活动时，会根据所安排的课程，结合各自的特长，给学生们增加课外知识，
+以充实课外学习生活。以多种形式给小朋友们上课，除了通过PPT进行教学外，还通过视频展示
+、问答互动、演小话剧、互动小游戏等方式将学习与游戏相结合，以此提高学生的课堂积极性
+。同时也增强了团队合作，尊敬师长，爱护幼小及责任感等思想意识。传播着爱心和奉献精神，丰
+富自己的课余生活。同时也可以认识更多的志愿者，认识新朋友，提升自己的综合素质
+</p>
+<div class="hh1">
+	
+</div>
+<style type="text/css">
+	.text1 p{text-indent: 2em;line-height: 30px;}
+	.title p a{margin-left: 5px;font: "微软雅黑";color: #EEEEEE;}
+	.title h3{color: #EEEEEE;padding-top: 25px;}
+.text1{width:97.5%;height:auto;float: left;padding: 10px 10px 10px 10px;margin-top: 20px;}
+.hh1{border: 1px dashed #434648;width: 90%;margin: 0 auto;}
+</style>
+</div>
+</div>
+	
+<div class="clear"></div>
+<script type="text/javascript">
+	window.onresize = function(){
+    var text1 = document.getElementById("box2");
+    text2.style["z-index"] = 1;
+}
+</script>
+
+
+        
+</div>
+<style type="text/css">
+	hr {margin-top: 50px;}
+.end {width:100%;margin-top: 30px;}
+.end .foot {width:31%;margin-bottom: 30px;line-height: 1.7;margin-right: 1%;margin-left: 1%;}
+.end .foot p{text-align: center;font-size: 12px;}
+.end .foot p a{color:#0000EE;}
+	.footer{width:90%;height: auto;}
+</style>
+<hr/>
+        <div class="end">
+        	<div class="container">
+        		
+        
+	        	<div class="foot l">
+			        	<p>青志联·新湖校区</p >
+			        	<p>新湖校区教学楼546</p >
+	                    <p><a  href="#">18316476651</a>（xxzz）</p >
+	        	</div>
+	        	<div class="foot l">
+			        	<p>青志联·学智校区</p >
+			        	<p>学智校区A304旁</p >
+	                    <p><a href="#">18316476651</a>（xxzz）</p >
+	        	</div>
+	        	<div class="foot l">
+			        	<p>官方微博:<a href="#">@xxzz学院青年志愿者联合会</a></p >
+			        	<p>投稿邮箱:<a href="#">xxzz@qq.com</a></p >
+	        	</div>
+        	</div>
+        	</div>
+    
+       
+<div id="quick">
+    	<p><a href="#" class="quickTop">返回顶部↑</a></p>
+        <p><a href="#" class="text1(copy)" >特色活动</a></p>
+        <p ><a class="c3 "href="about.html">报名流程</a></p>
+		<p ><a class="c4" href="i志愿.html">i志愿使用</a></p>
+		<p><a class="c5" href="compla.html">沟通平台</a></p>
+		<p><a class="c6" href="contact us.html">联系我们</a></p>
+        <p><a href="ss1.html#footer" >底部</a></p>
+        <p><img src="images/ewm.png"/></p>
+        
+   </div>
+    <script type="text/javascript">
+		qMenu = new QuickMenu(document.getElementById("quick"),0,200);
+		qMenu.InitializeStaticMenu();
+	</script>
+</body>
+</html>

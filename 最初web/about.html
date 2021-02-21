@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>校青年志愿者联合会</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script type="text/javascript" src="js/js/jquery-1.11.1.min.js" ></script>
+		<script type="text/javascript" src="js/js/menu.js" ></script>
+		<script type="text/javascript" src="js/js/unslider.min.js" ></script>
+		<script src="js/respond.min.js"></script>
+		<script type="text/javascript" src="js/swfobject.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<link rel="stylesheet" type="text/css" href="css/media.css"/>
+		<link rel="stylesheet" type="text/css" href="css/about.css"/>
+		<script>
+			window.onload=function(){
+				var oUl=document.getElementsByTagName('section')[0];
+				var aLiUl=oUl.getElementsByTagName('img');
+				var oOl=document.getElementsByTagName('ol')[0];
+				var aLiOl=oOl.getElementsByTagName('li');
+			
+			for(var i=0;i<aLiOl.length;i++)
+			{
+				aLiOl[i].index=i;
+				aLiOl[i].onmousedown=function(){
+					for(var i=0;i<aLiOl.length;i++)
+					{
+						aLiOl[i].className='';
+						aLiUl[i].style.display='none';
+					}
+					this.className='active';
+					aLiUl[this.index].style.display='block';
+				};
+				
+			}
+			};
+		</script>
+	</head>
+	<body>
+		<div id="content">
+
+		<div class="header">
+			<div class="container clear"  id="header">
+				<div class="logo">
+					<div class="fl">
+						<img src="images/logo.jpg" alt="青志联"/>
+					</div>
+				</div>
+				<!-- 下拉导航 -->
+				<label id="menu-toggle" for="menu-checkbox"><img src="images/下拉菜单按钮.png"/></label>
+                <input id="menu-checkbox" type="checkbox">
+                <div class="nav-hide">
+                	<ul>
+						<li><a href="index.html" class="color1">首页</a></li>
+						<li><a class="color2">特色活动</a>
+							<ul>
+								<li><a href="respectold.html" class="color7">敬老活动</a></li>
+								<li><a href="ss1.html" class="color7">支教活动</a></li>
+							</ul>
+						</li>	
+						<li><a href="about.html" class="color3 active">报名流程</a></li>
+						<li><a href="i志愿.html"  class="color4">i志愿使用</a></li>
+						<li><a href="compla.htmll"  class="color5">沟通平台</a></li>
+						<li><a href="contact us.html"  class="color6 ">联系我们</a></li>
+					</ul>
+                </div>
+				<div class="nav ">
+					<div class="fr">
+						<ul>
+							<li><a href="index.html" class="color1">首页</a></li>
+							<li><a class="color2">特色活动</a>
+								<ul>
+									<li><a href="respectold.html" class="color7">敬老活动</a></li>
+								    <li><a href="ss1.html" class="color7">支教活动</a></li>
+								</ul>
+							</li>	
+							<li><a href="about.html" class="color3 active">报名流程</a></li>
+							<li><a href="i志愿.html"  class="color4">i志愿使用</a></li>
+							<li><a href="compla.html"  class="color5">沟通平台</a></li>
+							<li><a href="contact us.html"  class="color6 ">联系我们</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+		<div class="line"></div>
+	   <div class="izhiyuan"><img src="images/微信图片_20180508225147.jpg"/></div>	
+		</div>
+		<div class="container">
+			<section>
+				<div>
+					<ol>
+						<li class="active col1">1</li>
+						<li class="col2">2</li>
+						<li class="col1">3</li>
+						<li class="col2">4</li>
+						<li class="col1">5</li>
+						<li class="col2">6</li>
+						<li class="col1">7</li>
+						<li class="col2">8</li>
+						<li class="col1">9</li>
+						<li class="col2">10</li>
+					</ol>
+				</div>
+				<div >
+					<ul class="blog">
+						<li><img src="images/baoming1.jpg"/></li>
+						<li><img src="images/baoming2.jpg"/></li>
+						<li><img src="images/baoming3.jpg"/></li>
+						<li><img src="images/baoming4.jpg"/></li>
+						<li><img src="images/baoming10.jpg"/></li>
+						<li><img src="images/baoming5.jpg"/></li>
+						<li><img src="images/baoming6.jpg"/></li>
+						<li><img src="images/baoming7.jpg"/></li>
+						<li><img src="images/baoming8.jpg"/></li>
+						<li class="bm10"><img src="images/baoming9.jpg"/></li>
+					</ul>
+				</div>
+			</section>
+        </div>
+	    <footer>
+        	<div class="container ">
+	        	<div class="foot fl col-3">
+			        	<p>青志联·新湖校区</p>
+			        	<p>新湖校区教学楼546</p>
+	                    <p><a href="#">18316476651</a>（秋山之外）</p>
+	        	</div>
+	        	<div class="foot fl col-3">
+			        	<p>青志联·学智校区</p>
+			        	<p>学智校区A304旁</p>
+	                    <p><a href="#">18316476651</a>（秋山之外）</p>
+	        	</div>
+	        	<div class="foot fl col-3">
+			        	<p>官方微博:<a href="#">@xxzz学院青年志愿者联合会</a></p>
+			        	<p>投稿邮箱:<a href="#">xxzz@qq.com</a></p>
+	        	</div>
+        	</div>
+        </footer>  
+        <!-- 悬浮导航-->
+        <div id="menu">
+			<ul>
+				<li><img src="images/ewm.png"/></li>
+			</ul>
+		</div>
+        <!--回到顶部-->
+        <div id="box" class="box">
+             <div class="box-in"></div>
+        </div>
+        <script src="js/回到顶部.js" ></script>
+	</body>
+</html>

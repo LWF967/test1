@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登录系统</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/compla-login.css"/>
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		<script src="js/js/jquery-1.11.1.min.js"></script>
+	</head>
+	<body>
+		<nav>
+		<label id="menu-toggle" for="menu-checkbox"><img src="images/compla-img/下拉菜单按钮.jpg"/></label>
+        <input id="menu-checkbox" type="checkbox">
+        <div class="nav-hide">
+            <ul>
+				<li><a href="index.html">首页</a></li>
+			    <li><a class="color2">特色活动</a>
+				<ul>
+					<li><a href="respectold.html" >敬老活动</a></li>
+					<li><a href="ss1.html">支教活动</a></li>
+				</ul>
+				</li>	
+				<li><a href="about.html" >报名流程</a></li>
+				<li><a href="i志愿.html" >i志愿使用</a></li>
+				<li><a href="compla.html">沟通平台</a></li>
+				<li><a href="contact us.html" >联系我们</a></li>
+			</ul>
+        </div>
+		</nav>
+		<script>$(document).ready(function(c) {
+			$('.close').on('click', function(c){
+				$('.login-form').fadeOut('slow', function(c){
+					$('.login-form').remove();
+				});
+			});
+		});
+		</script>
+		 <!--SIGN UP-->
+		 <h1>青志联欢迎您</h1>
+		 <div class="login-form">
+		 	<div class="close"> </div>
+		 	<div class="head-info">
+		 		<label class="lbl-1"> </label>
+			    <label class="lbl-2"> </label>
+			    <label class="lbl-3"> </label>
+		   </div>
+		   <div class="clear"> </div>
+		   
+		   <div class="logo">
+		   	<img src="images/compla-img/logo2.png" />
+		   </div>
+		   <form>
+					<input type="text"  class="text" value="Username" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Username';}" >
+					<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}"><br />
+			</form>
+			
+			<div class="signin">
+				<input type="submit" value="Login" >
+			</div>
+		 </div>
+		 
+		 <div class="end">
+		 	<div class="end_left"><p>青志联·新湖校区</p><p>新湖校区教学楼546</p><p><a href="#">18316476651</a>（xxzz）</p></div>
+		    <div class="end_center"><p>青志联·学智校区</p><p>学智校区xxx旁</p><p><a href="#">18316476651</a>（xxzz）</p></div>
+			<div class="end_right"><p>官方微博：<a href="#">@xxzz学院青年志愿者联合会</a></p><p>投稿邮箱：<a href="#">xxzz@qq.com</a></p></div>
+		</div>	
+	</body>
+</html>
